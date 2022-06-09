@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { postAdded } from "../features/posts/postsSlice";
-import { nanoid } from "@reduxjs/toolkit";
 
 const PostForm = (props) => {
   const [title, setTitle] = useState("");
@@ -39,7 +38,7 @@ const PostForm = (props) => {
 
   return (
     <div className="add__post">
-      <h2> Add a New Post </h2>
+      <h2> Add Post </h2>
 
       <form onSubmit={onSubmitPost}>
         <label> Post Title </label>
@@ -61,7 +60,11 @@ const PostForm = (props) => {
           {" "}
         </textarea>
         <br />
-        <button text="submit" disabled={!canSave}>
+        <button
+          text="submit"
+          disabled={!canSave}
+          style={{ backgroundColor: "#32CD32" }}
+        >
           Save
         </button>
       </form>

@@ -6,7 +6,6 @@ const TimeAgo = ({ timeStamp }) => {
 
   if (timeStamp) {
     const date = parseISO(timeStamp);
-    console.log(" paseISO date", date);
     const timePeriod = formatDistanceToNow(date);
     timeAgo = `${timePeriod} ago`;
   }
