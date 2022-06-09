@@ -1,4 +1,4 @@
-## Live Demo [Clickhere]("https://posts-app-e.netlify.app")
+## Live Demo [Click HERE]("https://posts-app-e.netlify.app").
 
 # Getting Started with Create React App
 
